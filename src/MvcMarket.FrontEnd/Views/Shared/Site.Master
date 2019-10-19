@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE>
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    <link rel="Stylesheet" href="~/Content/styles.css" />
+</head>
+<body>
+    <div id="header">
+        <% Html.RenderPartial("Auth"); %>
+        <% Html.RenderAction("Summary", "Cart"); %>
+        <div class="title">
+            ام وی سی مارکت</div>
+    </div>
+    <% if (TempData["message"] != null)
+       { %>
+    <div class="Message">
+        <%= TempData["message"] %></div>
+    <% } %>
+    <div id="categories">
+        <% Html.RenderAction("Menu", "Nav",
+               new { highlightCategory = ViewData["CurrentCategory"], right = true }); %>
+    </div>
+    <div id="content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+    <div id="categories" style="float: left">
+        <% Html.RenderAction("Menu", "Nav",
+               new { highlightCategory = ViewData["CurrentCategory"], right = false }); %>
+    </div>
+</body>
+</html>

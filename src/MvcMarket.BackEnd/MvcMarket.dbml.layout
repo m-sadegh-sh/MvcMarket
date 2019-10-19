@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9" name="MvcMarket">
+  <DataContextMoniker Name="/MvcMarketDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2a03421d-a67d-401b-ac3c-8064bbd64166" absoluteBounds="0.75, 7.125, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/MvcMarketDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cadf110e-0bb3-436e-aa02-8a8b87a5fb2b" absoluteBounds="0.76500000059604645, 7.58500000089407, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3c8b604d-7a2d-4bfa-96dc-4359f54b55e1" absoluteBounds="0.75, 5, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/MvcMarketDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="980aa025-c838-45c2-9f68-5f6471246855" absoluteBounds="0.76500000059604645, 5.46000000089407, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="51e207b7-d533-4d33-8aef-fd188bdfef20" absoluteBounds="3.5, 5.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/MvcMarketDataContext/CategoriezedProduct" />
+      <nestedChildShapes>
+        <elementListCompartment Id="00aeb6c1-7735-47a1-a464-1357c4c5b0a4" absoluteBounds="3.5150000005960464, 6.21000000089407, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 7.125); (2.94365655253947 : 7.05299930907336 : JumpStart); (3.09987536540184 : 6.99491781214318 : JumpEnd); (3.5 : 6.84615315755208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MvcMarketDataContext/Category/Category_CategoriezedProduct" />
+      <nodes>
+        <classShapeMoniker Id="2a03421d-a67d-401b-ac3c-8064bbd64166" />
+        <classShapeMoniker Id="51e207b7-d533-4d33-8aef-fd188bdfef20" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.25177124023438); (3.5 : 6.25177124023438)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MvcMarketDataContext/Product/Product_CategoriezedProduct" />
+      <nodes>
+        <classShapeMoniker Id="3c8b604d-7a2d-4bfa-96dc-4359f54b55e1" />
+        <classShapeMoniker Id="51e207b7-d533-4d33-8aef-fd188bdfef20" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="df02107f-46af-4942-a35f-f84dd187393c" absoluteBounds="3.5, 7.5, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/MvcMarketDataContext/CartLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fd1ba478-ff5f-4bfe-838f-cc16819b777c" absoluteBounds="3.5150000005960464, 7.96000000089407, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f58cacb8-c8c3-4fd7-816b-eb909d13b623" absoluteBounds="3.5, 1, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/MvcMarketDataContext/Cart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b166c757-e03d-4736-a015-f4cf9105b005" absoluteBounds="3.5150000005960464, 1.4600000008940697, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="08052f78-b06e-48a8-bd3b-fec435b6e9e5" absoluteBounds="0.75, 3.375, 2, 1.2605004882812523">
+      <DataClassMoniker Name="/MvcMarketDataContext/Credit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fcf1b2b6-dbc3-4b65-b2ab-5363c4425299" absoluteBounds="0.765, 3.835, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d73681e-ee8b-4739-8d40-b389c391b883" absoluteBounds="0.75, 1, 2, 1.917889811197917">
+      <DataClassMoniker Name="/MvcMarketDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21c51f85-c516-4b56-b280-fa3c4ad47b36" absoluteBounds="0.76500000059604645, 1.4600000008940697, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 6.75219260163762); (3.125 : 7.12719260163762); (3.125 : 8.13025024414062); (3.5 : 8.13025024414062)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MvcMarketDataContext/Product/Product_CartLine" />
+      <nodes>
+        <classShapeMoniker Id="3c8b604d-7a2d-4bfa-96dc-4359f54b55e1" />
+        <classShapeMoniker Id="df02107f-46af-4942-a35f-f84dd187393c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.71242390950521); (3.5 : 1.71242390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/MvcMarketDataContext/User/User_Cart" />
+      <nodes>
+        <classShapeMoniker Id="0d73681e-ee8b-4739-8d40-b389c391b883" />
+        <classShapeMoniker Id="f58cacb8-c8c3-4fd7-816b-eb909d13b623" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="267310c5-9c77-4c9e-bc5d-dc83fb262152" absoluteBounds="3.5, 3.25, 2, 2.0822371419270826">
+      <DataClassMoniker Name="/MvcMarketDataContext/ShippingDetails" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9323a1ec-a90d-43b4-a7c8-9a12e72b026e" absoluteBounds="3.5150000005960464, 3.7100000008940697, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.91788981119792); (3.125 : 3.29288981119792); (3.125 : 2.875); (3.5 : 3.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/MvcMarketDataContext/User/User_ShippingDetails" />
+      <nodes>
+        <classShapeMoniker Id="0d73681e-ee8b-4739-8d40-b389c391b883" />
+        <classShapeMoniker Id="267310c5-9c77-4c9e-bc5d-dc83fb262152" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

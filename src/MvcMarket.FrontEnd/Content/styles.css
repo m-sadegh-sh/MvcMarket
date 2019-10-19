@@ -1,0 +1,238 @@
+﻿body
+{
+    direction: rtl;
+}
+body, td
+{
+    font-family: segoe ui, verdana;
+}
+h1
+{
+    padding: .5em;
+    padding-top: 0;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: 2px solid gray;
+}
+table.grid td, table.grid th
+{
+    border-bottom: 1px dotted gray;
+    text-align: right;
+}
+table.grid
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+table.grid th.numericcol, table.grid td.numericcol
+{
+    text-align: left;
+    padding-left: 1em;
+}
+div.message
+{
+    background: gray;
+    color: white;
+    padding: .2em;
+    margin-top: .25em;
+}
+
+.field-validation-error
+{
+    color: red;
+}
+.input-validation-error
+{
+    border: 1px solid red;
+    background-color: #ffeeee;
+}
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: red;
+}
+
+
+body
+{
+    direction: rtl;
+    font-family: cambria, georgia, "times new roman";
+    margin: 0;
+}
+div#header div.title, div.item h3, div.item h4, div.pager a
+{
+    font: bold 1em "arial narrow" , "franklin gothic medium" , arial;
+}
+div#header
+{
+    background-color: #444;
+    border-bottom: 2px solid #111;
+    color: white;
+    display: block;
+}
+div#header div.title
+{
+    font-size: 2em;
+    padding: .6em;
+}
+div#content
+{
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 1em;
+    width: 675px;
+    min-height: 300px;
+    float: right;
+    display: inline-block;
+}
+div#categories
+{
+    width: 8em;
+    padding: .3em;
+    float: right;
+    display: inline-block;
+}
+
+div.item
+{
+    border-top: 1px dotted gray;
+    padding-top: .7em;
+    margin-bottom: .7em;
+}
+div.item:first-child
+{
+    border-top: none;
+    padding-top: 0;
+}
+div.item h3
+{
+    font-size: 1.3em;
+    margin: 0 0 .25em 0;
+}
+div.item h4
+{
+    font-size: 1.1em;
+    margin: .4em 0 0 0;
+}
+
+div.pager
+{
+    text-align: left;
+    border-top: 2px solid silver;
+    padding: .5em 0 0 0;
+    margin-top: 1em;
+}
+div.pager a
+{
+    font-size: 1.1em;
+    color: #666;
+    text-decoration: none;
+    padding: 0 .4em 0 .4em;
+}
+div.pager a:hover
+{
+    background-color: silver;
+}
+div.pager a.selected
+{
+    background-color: #353535;
+    color: white;
+}
+
+div#categories a
+{
+    font: bold 1.1em "arial narrow" , "franklin gothic medium" ,arial;
+    display: block;
+    text-decoration: none;
+    padding: .6em;
+    color: black;
+    border-bottom: 1px solid silver;
+}
+div#categories a.selected
+{
+    background-color: #666;
+    color: white;
+}
+div#categories a:hover
+{
+    background-color: #ccc;
+}
+div#categories a.selected:hover
+{
+    background-color: #666;
+}
+
+form
+{
+    margin: 0;
+    padding: 0;
+}
+div.item form
+{
+    float: left;
+}
+div.item input
+{
+    color: white;
+    background-color: #333;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+h2
+{
+    margin-top: 0.3em;
+}
+tfoot td
+{
+    border-top: 1px dotted gray;
+    font-weight: bold;
+}
+.actionbuttons a
+{
+    font: .8em arial;
+    color: white;
+    margin: 0 .5em 0 .5em;
+    text-decoration: none;
+    padding: .15em 1.5em .2em 1.5em;
+    background-color: #353535;
+    border: 1px solid black;
+}
+
+div#cart
+{
+    float: left;
+    margin: .8em;
+    color: silver;
+    background-color: #555;
+    padding: .5em 1em .5em .5em;
+}
+div#cart a
+{
+    text-decoration: none;
+    padding: .4em 1em .4em 1em;
+    line-height: 2.1em;
+    margin-right: .5em;
+    background-color: #333;
+    color: white;
+    border: 1px solid black;
+}
+div#cart span.summary
+{
+    color: white;
+}
+
+.field-validation-error
+{
+    color: red;
+}
+.input-validation-error
+{
+    border: 1px solid red;
+    background-color: #ffeeee;
+}
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: red;
+}
